@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio Sesión</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <div class="header-container"></div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <div class="form-container">
+
+            <h2>Inicio Sesión</h2>
+
+            <form id="formulario" action="#" method="post">
+
+                <!-- NOMBRE -->
+                <div class="input-group">
+                    <label for="nombre">
+                        Nombre<span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingrese su nombre"
+                        required
+                    >
+                </div>
+
+                <!-- APELLIDO -->
+                <div class="input-group">
+                    <label for="apellido">
+                        Apellido<span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        placeholder="Ingrese su apellido"
+                        required
+                    >
+                </div>
+
+                <!-- TIPO DE DOCUMENTO -->
+                <div class="input-group">
+                    <label for="tipo-doc">
+                        Tipo Documento<span>*</span>
+                    </label>
+
+                    <select id="tipo-doc" name="tipo-doc" required>
+
+                        <option value="" disabled selected>
+                            Seleccionar
+                        </option>
+
+                        <option value="ti">
+                            Tarjeta de Identidad
+                        </option>
+
+                        <option value="cc">
+                            Cédula de Ciudadanía
+                        </option>
+
+                        <option value="ce">
+                            Cédula de Extranjería
+                        </option>
+
+                    </select>
+                </div>
+
+                <!-- NUMERO DE DOCUMENTO -->
+                <div class="input-group">
+                    <label for="num-doc">
+                        Número documento<span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="num-doc"
+                        name="num-doc"
+                        placeholder="Ingrese su número de documento"
+                        required
+                    >
+                </div>
+
+                <!-- FECHA DE NACIMIENTO -->
+                <div class="input-group">
+                    <label for="fecha-nac">
+                        Fecha Nacimiento<span>*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha-nac"
+                        name="fecha-nac"
+                        required
+                    >
+                </div>
+
+                <!-- TELEFONO -->
+                <div class="input-group">
+                    <label for="telefono">
+                        Teléfono<span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="Ingrese su número de teléfono"
+                        required
+                    >
+                </div>
+
+                <!-- CORREO -->
+                <div class="input-group">
+                    <label for="correo">
+                        Correo<span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+                </div>
+
+                <!-- PAIS -->
+                <div class="input-group">
+
+                    <label for="pais">
+                        País<span>*</span>
+                    </label>
+
+                    <select id="pais" name="pais" required>
+
+                        <option value="" disabled selected>
+                            Seleccionar
+                        </option>
+
+                        <option value="colombia">
+                            Colombia
+                        </option>
+
+                        <option value="argentina">
+                            Argentina
+                        </option>
+
+                        <option value="brasil">
+                            Brasil
+                        </option>
+
+                        <option value="chile">
+                            Chile
+                        </option>
+
+                        <option value="ecuador">
+                            Ecuador
+                        </option>
+
+                        <option value="mexico">
+                            México
+                        </option>
+
+                        <option value="peru">
+                            Perú
+                        </option>
+
+                        <option value="venezuela">
+                            Venezuela
+                        </option>
+
+                        <option value="espana">
+                            España
+                        </option>
+
+                        <option value="estados-unidos">
+                            Estados Unidos
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- CIUDAD -->
+                <div class="input-group">
+
+                    <label for="ciudad">
+                        Ciudad<span>*</span>
+                    </label>
+
+                    <select id="ciudad" name="ciudad" required>
+
+                        <option value="" disabled selected>
+                            Seleccionar
+                        </option>
+
+                        <option value="bogota">
+                            Bogotá
+                        </option>
+
+                        <option value="medellin">
+                            Medellín
+                        </option>
+
+                        <option value="cali">
+                            Cali
+                        </option>
+
+                        <option value="barranquilla">
+                            Barranquilla
+                        </option>
+
+                        <option value="cartagena">
+                            Cartagena
+                        </option>
+
+                        <option value="bucaramanga">
+                            Bucaramanga
+                        </option>
+
+                        <option value="pereira">
+                            Pereira
+                        </option>
+
+                        <option value="manizales">
+                            Manizales
+                        </option>
+
+                        <option value="soacha">
+                            Soacha
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- CONFIRMAR DATOS -->
+                <div class="checkbox-group">
+
+                    <label for="confirmar">
+                        Confirmar Datos<span>*</span>
+                    </label>
+
+                    <input
+                        type="checkbox"
+                        id="confirmar"
+                        name="confirmar"
+                        required
+                    >
+
+                </div>
+
+                <!-- BOTON -->
+                <button type="submit">
+                    Confirmar
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
